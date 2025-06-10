@@ -21,7 +21,8 @@ const Navbar = () => {
                     alt='logo'
                     width={46}
                     height={44}
-                    className='w-full h-auto'
+                    style={{ width: '46px', height: '44px' }}
+                    // className='w-full h-auto'
                 />
             </div>
         </Link>
