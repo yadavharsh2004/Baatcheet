@@ -1,3 +1,4 @@
+import CompanionComponent from "@/components/CompanionComponent";
 import { getCompanion } from "@/lib/actions/companion.actions";
 import { getSubjectColor } from "@/lib/utils";
 import { currentUser } from "@clerk/nextjs/server";
@@ -8,19 +9,28 @@ interface CompanionSessionPageProps {
   params : Promise<{id: string}>;
 }
 
-//params  /url/{id}
+// params  /url/{id}
 // searchParams  /url/?key=value&key1=value1 
 
 const CompanionSession = async ({params} : CompanionSessionPageProps) => {
   const {id} = await params;
-  const {name, title, subject, topic, duration, } = await getCompanion(id);
+  const companion = await getCompanion(id);
   const user = await currentUser();
+
+  
+  if (!companion || !companion.name) {
+    console.error("No companion found for id:", id);
+    redirect('/companions'); // or return some fallback
+  }
+
+  const {name, title, subject, topic, duration } = companion;
 
   if(!user) redirect('/sign-in');
   if(!name) redirect('/companions');
 
   return (
     <main>
+      {/* header */}
       <article className="flex rounded-border justify-between p-6 max-md:flex-col ">
         <div className="flex items-center gap-2 ">
 
@@ -51,6 +61,13 @@ const CompanionSession = async ({params} : CompanionSessionPageProps) => {
           {duration} minutes
         </div>
       </article>
+
+      <CompanionComponent 
+        {...companion}
+        companionId = {id}
+        userName = {user.firstName!}
+        userImage = {user.imageUrl!}
+      />
 
     </main>
   )
