@@ -182,8 +182,8 @@ const CompanionComponent = ({companionId, subject, topic, name, userName, userIm
 
       </section>
 
-      <section className='transcript'>
-          <div className='transcript-message no-scrollbar'>
+      <section className='transcript grow relative max-h-[calc(100vh-450px)]'>
+          <div className='transcript-message '>
             {messages.map((message, index) => {
               if(message.role === 'assistant'){
                 return(
@@ -201,7 +201,10 @@ const CompanionComponent = ({companionId, subject, topic, name, userName, userIm
               }
             })}
           </div>
-          <div className='transcript-fade' />
+          {isSpeaking?(
+            <div className='transcript-fade' />
+          ): null
+          }   
       </section>
 
     </section> 
