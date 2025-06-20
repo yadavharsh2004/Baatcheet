@@ -1,6 +1,7 @@
 # Baatcheet - Your Personal AI Learning Companion 🤖
 
-![Baatcheet Demo](./public/images/logo.svg) <!-- Replace with a good screenshot or GIF of your app -->
+<!-- ![Baatcheet Demo](./public/images/logo.svg)  -->
+<!-- Replace with a good screenshot or GIF of your app -->
 
 **Live Demo:** [Deployed Link](https://baatcheet-dusky.vercel.app/) <!-- Replace with your live app link -->
 
@@ -98,7 +99,7 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 | Home Page                                    | Companion Session                                    |
 | -------------------------------------------- | ---------------------------------------------------- |
-| ![Home Page Screenshot](./public/screenshot1.png) | ![Companion Session Screenshot](./public/screenshot2.png) |
+| ![Home Page Screenshot](public/readme/HomePage.png) | ![Companion Session Screenshot](./public/screenshot2.png) |
 
 ---
 
