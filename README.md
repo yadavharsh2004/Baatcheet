@@ -99,7 +99,7 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 | Home Page                                    | Companion Session                                    |
 | -------------------------------------------- | ---------------------------------------------------- |
-| ![Home Page Screenshot](public/readme/HomePage.png) | ![Companion Session Screenshot](./public/screenshot2.png) |
+| ![Home Page Screenshot](public/readme/HomePage.png) | ![Companion Session Screenshot](./public/readme/CompanionSession.png) |
 
 ---
 
