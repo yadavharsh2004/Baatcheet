@@ -9,6 +9,14 @@
 
 This project was built to demonstrate modern web development practices, integrating cutting-edge technologies to create a scalable, interactive, and monetizable application.
 
+## 🖼️ Screenshots
+
+| Home Page                                    | Companion Session                                    |
+| -------------------------------------------- | ---------------------------------------------------- |
+| ![Home Page Screenshot](public/readme/HomePage.png) | ![Companion Session Screenshot](./public/readme/CompanionSession.png) |
+
+---
+
 ## ✨ Key Features
 
 -   **🎙️ Real-Time Voice Conversations:** Engage in smooth, interactive learning sessions with AI companions powered by **GPT-4** through the **Vapi** voice AI platform.
@@ -94,13 +102,6 @@ npm run dev
 ```
 
 The application should now be running on [http://localhost:3000](http://localhost:3000).
-
-## 🖼️ Screenshots
-
-| Home Page                                    | Companion Session                                    |
-| -------------------------------------------- | ---------------------------------------------------- |
-| ![Home Page Screenshot](public/readme/HomePage.png) | ![Companion Session Screenshot](./public/readme/CompanionSession.png) |
-
 ---
 
 _This README was created by [Harsh Yadav](https://github.com/yadavharsh2004). Feel free to connect with me!_
